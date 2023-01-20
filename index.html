@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agents - Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <img src="images/Logo.png" alt="travel-logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tour-packages">Tour Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+                <a class="nav-kanan d-flex gap-2 text-decoration-none" href="">
+                    <img src="images/Phone.png" alt="Phone-logo">
+                    <p>+111 0258211</p>
+                </a>
+            </div>
+        </nav>
+    </header>  
+    <main>
+        <section id="home" class="home container">
+            <div class="home-detail row d-flex align-items-center pt-5">
+                <div class="home-kiri col">
+                    <h1 class="animate__animated animate__fadeInLeftBig">It's a Big World Out There,<div class="go d-inline">Go Explore</div></h1>
+                </div>
+                <div class="home-kanan col">
+                    <p class="animate__animated animate__flipInX">Time tracking software used by millions. A simple time tracker and timesheet app that lets you track work hours across projects......</p>
+                    <a class="btn animate__animated animate__pulse animate__infinite" href="#" role="button">Discover Now</a>
+                </div>
+            </div>
+            <div class="video ms-3">
+                <iframe  width="1200" height="600" src="https://www.youtube.com/embed/mhxFRatrw_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <form class="form-detail d-flex gap-5">
+                <div class="mb-3">
+                <label for="inp-from" class="form-label">From</label>
+                <input type="text" class="form-control" id="inp-from" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                <label for="inp-to" class="form-label">To</label>
+                <input type="text" class="form-control" id="inp-to">
+                </div>
+                <div class="mb-3">
+                    <label for="inp-dates" class="form-label">Dates</label>
+                    <input type="date" class="form-control" id="inp-dates">
+                </div>
+                <div class="mb-3">
+                    <label for="inp-guest" class="form-label">Guest</label>
+                    <input type="text" class="form-control" id="inp-guest">
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+        <section id="about-us" class="about-us container">
+            <div class="row d-flex align-items-center">
+                <div class="about-kiri col">
+                    <img src="images/Image.png" alt="gambar-1" data-aos="fade-up">
+                </div>
+                <div class="about-kanan col">
+                    <h4>About us</h4>
+                    <h1>The Best And Most trusted <div class="go d-inline">service</div></h1>
+                    <p>We are the largest holiday service provider in the world with partners and places spread all over the world by prioriti-zing service and customer satisfaction.</p>
+                    <button type="submit" class="btn">Learn More</button>
+                    <div class="persen row text-center">
+                        <div class="persen-kiri col">
+                            <h2>200+</h2>
+                            <p>Customer<br>& Partners</p>
+                        </div>
+                        <div class="persen-tengah col">
+                            <h2>500+</h2>
+                            <p>Place in<br>The World</p>
+                        </div>
+                        <div class="persen-kanan col">
+                            <h2>1k+</h2>
+                            <p>Success<br>Journey</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tour-packages" class="tour-packages container mt-5 mb-5">
+            <h1 class="text-center">The best place for vacation</h1>
+            <div class="tour-link-detail text-center d-flex gap-5 justify-content-center mt-3 mb-3" onclick="return false">
+                <a class="tour-link text-decoration-none" href="">Special Deals</a>
+                <a class="tour-link text-decoration-none" href="">Populer</a>
+                <a class="tour-link text-decoration-none" href="">Recommendation</a>
+                <a class="tour-link text-decoration-none" href="">Best Price</a>
+            </div>
+            <div class="card-container container d-flex gap-5"data-aos="zoom-in-right">
+                <div class="card card-satu" style="width: 18rem;">
+                    <img src="images/pexels-jess-loiterton-4321085.png" class="card-img-top" alt="card-satu">
+                    <div class="card-body">
+                      <div class="card-atas d-flex justify-content-between align-items-center">
+                        <div class="card-atas-kiri d-flex gap-2">
+                            <img src="images/Vector 1.png" alt="lokasi-logo">
+                            <h5>Maldives</h5>
+                        </div>
+                        <div class="card-atas-kanan d-flex align-items-center gap-2">
+                            <img src="images/Vector-2.png" alt="rating-logo">
+                            <p class="fs-5">4.7</p>
+                        </div>
+                      </div>
+                      <div class="card-tengah">
+                        <h4>Hurawalhi Island</h4>
+                        <p>7 Days Tour on 2 person</p>
+                      </div>
+                      <div class="card-bawah d-flex align-items-center justify-content-between">
+                        <h4>620$</h4>
+                        <a href="#" class="btn-card text-decoration-none">View more</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="card card-dua" style="width: 18rem;">
+                    <img src="images/pexels-jess-loiterton-2.png" class="card-img-top" alt="card-dua">
+                    <div class="card-body">
+                      <div class="card-atas d-flex justify-content-between align-items-center">
+                        <div class="card-atas-kiri d-flex gap-2">
+                            <img src="images/Vector 1.png" alt="lokasi-logo">
+                            <h5>Indonesia</h5>
+                        </div>
+                        <div class="card-atas-kanan d-flex align-items-center gap-2">
+                            <img src="images/Vector-2.png" alt="rating-logo">
+                            <p class="fs-5">4.7</p>
+                        </div>
+                      </div>
+                      <div class="card-tengah">
+                        <h4>Bali Province</h4>
+                        <p>4 Days Tour 2 person</p>
+                      </div>
+                      <div class="card-bawah d-flex align-items-center justify-content-between">
+                        <h4>780$</h4>
+                        <a href="#" class="btn-card text-decoration-none">View more</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="card card-tiga" style="width: 18rem;">
+                    <img src="images/pexels-jess-loiterton-3.png" class="card-img-top" alt="card-tiga">
+                    <div class="card-body">
+                      <div class="card-atas d-flex justify-content-between align-items-center">
+                        <div class="card-atas-kiri d-flex gap-2">
+                            <img src="images/Vector 1.png" alt="lokasi-logo">
+                            <h5>Spain</h5>
+                        </div>
+                        <div class="card-atas-kanan d-flex align-items-center gap-2">
+                            <img src="images/Vector-2.png" alt="rating-logo">
+                            <p class="fs-5">4.7</p>
+                        </div>
+                      </div>
+                      <div class="card-tengah">
+                        <h4>Barcelona city beach</h4>
+                        <p>4 Days Tour 4 person</p>
+                      </div>
+                      <div class="card-bawah d-flex align-items-center justify-content-between">
+                        <h4>850$</h4>
+                        <a href="#" class="btn-card text-decoration-none">View more</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="card card-empat" style="width: 18rem;">
+                    <img src="images/pexels-jess-loiterton-4.png" class="card-img-top" alt="card-empat">
+                    <div class="card-body">
+                      <div class="card-atas d-flex justify-content-between align-items-center">
+                        <div class="card-atas-kiri d-flex gap-2">
+                            <img src="images/Vector 1.png" alt="lokasi-logo">
+                            <h5>Maldives</h5>
+                        </div>
+                        <div class="card-atas-kanan d-flex align-items-center gap-2">
+                            <img src="images/Vector-2.png" alt="rating-logo">
+                            <p class="fs-5">4.7</p>
+                        </div>
+                      </div>
+                      <div class="card-tengah">
+                        <h4>Hurawalhi Island</h4>
+                        <p>7 Days Tour on 2 person</p>
+                      </div>
+                      <div class="card-bawah d-flex align-items-center justify-content-between">
+                        <h4>620$</h4>
+                        <a href="#" class="btn-card text-decoration-none">View more</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row d-flex">
+                <div class="footer-kiri col-4 mt-3">
+                    <img src="images/Logo.png" alt="travel-logo">
+                    <p>We believe brand interaction is key in commu- nication. Real innovations and a positive.</p>
+                    <div class="sosmed d-flex gap-4">
+                        <img src="images/twitter.png" alt="Twitter-logo">
+                        <img src="images/Instagram.png" alt="Instagram-logo">
+                        <img src="images/Youtube.png" alt="Youtube-logo">
+                    </div>
+                </div>
+                <div class="footer-about col-2 mt-3">
+                    <h5>About us</h5>
+                    <a href=""><p>Features</p></a>
+                    <a href=""><p>Features</p></a>
+                    <a href=""><p>Features</p></a>
+                    <a href=""><p>Features</p></a>
+                </div>
+                <div class="footer-company col-2 mt-3">
+                    <h5>Company</h5>
+                    <a href=""><p>Features</p></a>
+                    <a href=""><p>Features</p></a>
+                    <a href=""><p>Features</p></a>
+                    <a href=""><p>Features</p></a>
+                </div>
+                <div class="footer-support col-2 mt-3">
+                    <h5>Support</h5>
+                    <a href=""><p>Features</p></a>
+                    <a href=""><p>Features</p></a>
+                    <a href=""><p>Features</p></a>
+                </div>
+                <div class="footer-getintouch col-2 mt-3">
+                    <h5>Get in touch</h5>
+                    <input type="email" class="email-control mt-2" id="inp-email" placeholder="Your email here">
+                    <button type="submit" class="btn-alt">Get Access</button>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

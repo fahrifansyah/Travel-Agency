@@ -1,0 +1,284 @@
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+main{
+    background-color: #FEFCFB;
+}
+
+.navbar{
+    background-color: #FEFCFB;
+    color: black;
+    font-weight: 500;
+}
+
+.navbar-nav{
+    margin-left: 17%;
+    column-gap: 48px;
+}
+
+.nav-item a:active, .nav-item a:focus, .nav-item a:hover{
+    color: #FA7436;
+    animation: shake_X 1s infinite;
+}
+
+@keyframes shake_X {
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(5px);
+    }
+    50%{
+        transform: translateX(-5px);
+    }
+    75%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(-5px);
+    }
+    
+}
+
+.nav-item a:active{
+    border-bottom: 2px solid #FA7436;
+}
+
+.nav-kanan{
+    transform: translateY(7px);
+    color: #FA7436;
+    font-weight: 400;
+}
+
+.home-detail{
+    column-gap: 200px;
+}
+
+.nav-kanan img{
+    width: fit-content;
+    height: fit-content;
+}
+
+.home-kiri h1{
+    font-weight:700;
+    font-size: 72px;
+}
+
+.go{
+    color: #FA7436;
+}
+
+.home-kanan p{
+    font-size: 18px;
+    width: 90%;
+}
+
+.btn{
+    background-color: #FA7436;
+    color: white;
+    padding: 8px 24px;
+    margin-top: 24px;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.video{
+    position: relative;
+    margin-top: 20px;
+}
+
+.video::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+.form-detail{
+    background-color:#FEFCFB;
+    transform: translateY(-60px);
+    margin-left: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 20px 0px;
+}
+
+.about-kanan h4{
+    color: #FA7436;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.about-kanan h1{
+    font-size: 56px;
+}
+
+.about-kanan p{
+    font-size: 18px;
+    width: 85%;
+}
+
+.persen{
+    transform: translateX(-30px);
+    margin-top: 64px;
+}
+
+.persen-kiri h2 {
+    width: 90%;
+    color: #FA7436;
+    font-size: 36px;
+}
+
+.persen-tengah h2 {
+    width: 90%;
+    color: #FA7436;
+    font-size: 36px;
+}
+
+.persen-kanan h2 {
+    width: 90%;
+    color: #FA7436;
+    font-size: 36px;
+}
+
+.tour-link{
+    color: rgb(116, 116, 116);
+    font-size: 18px;
+}
+
+.tour-link:active, .tour-link:focus, .tour-link:hover{
+    color: #FA7436;
+}
+
+.tour-link:focus{
+    border-bottom: 2px solid #FA7436;
+}
+
+.card{
+    border-radius: 12px;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.card-atas-kiri h5{
+    font-size: 14px;
+    color: #FA7436;
+    font-weight: 400;
+}
+
+.card-atas-kiri img{
+    height: fit-content;
+}
+
+.card-atas-kanan{
+transform: translateY(4px);
+}
+
+.card-atas-kanan img{
+    height: fit-content;
+    transform: translateY(-8px);
+}
+
+.card-tengah p{
+    color: rgb(116, 116, 116);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.card-bawah h4{
+    color: #FA7436;
+}
+
+.btn-card{
+    color: rgb(116, 116, 116);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-card:hover{
+    color: #FA7436;
+}
+
+footer{
+    background-color: #F4EAE5;
+}
+
+.footer-kiri p{
+    width: 75%;
+    margin-left: 6px;
+    color: rgb(95, 95, 95);
+}
+
+.sosmed img{
+    width: 24px;
+    height: 24px;
+    margin-left: 6px;
+}
+
+.footer-about a{
+    text-decoration: none;
+    color: rgb(116, 116, 116);
+}
+
+.footer-company a{
+    text-decoration: none;
+    color: rgb(116, 116, 116);
+}
+
+.footer-support a{
+    text-decoration: none;
+    color: rgb(116, 116, 116);
+}
+
+.email-control{
+    border: none;
+    width: 200px;
+    height: 40px;
+    background-color: #f3f3f3;
+    color: #FEFCFB;
+}
+
+.btn-alt{
+    background-color: #FA7436;
+    font-size: 14px;
+    color: white;
+    padding: 8px 64px;
+    border: none;
+    margin-top: 12px;
+}
+
+.btn-alt:hover{
+    background-color: black;
+    color: white;
+}
+
+@media only screen and (max-width: 992px){
+    .video iframe{
+        width: 600px;
+        height: 600px;
+    }
+
+    .form-detail{
+        display: flex;
+        flex-direction: column;
+        transform: translateY(20px);
+        margin-bottom: 32px;
+        background-color: #d8d6d5;
+    }
+
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
